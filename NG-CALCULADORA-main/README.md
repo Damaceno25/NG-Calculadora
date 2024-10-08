@@ -1,1 +1,0 @@
-Calculadora Criada em Angular
