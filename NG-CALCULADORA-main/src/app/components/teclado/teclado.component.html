@@ -1,0 +1,159 @@
+<div class="container mb-2">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card bg-secondary rounded-3 p-3">
+        <div class="card-body">
+          <input
+            class="form-control mb-3"
+            type="text"
+            disabled="disabled"
+            readonly="readonly"
+            name="resultadoAtual"
+            [value]="resultadoAtual" />
+
+          <form>
+            <div class="row g-2">
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('7')">
+                  7
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('8')">
+                  8
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('9')">
+                  9
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-warning w-100"
+                  (click)="resultado('*')">
+                  x
+                </button>
+              </div>
+            </div>
+
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('4')">
+                  4
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('5')">
+                  5
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('6')">
+                  6
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-warning w-100"
+                  (click)="resultado('/')">
+                  ÷
+                </button>
+              </div>
+            </div>
+
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('1')">
+                  1
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('2')">
+                  2
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('3')">
+                  3
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-warning w-100"
+                  (click)="resultado('-')">
+                  -
+                </button>
+              </div>
+            </div>
+
+            <div class="row g-2 mt-2">
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-danger w-100"
+                  (click)="limpar()">
+                  CE
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-light w-100"
+                  (click)="resultado('0')">
+                  0
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-dark w-100"
+                  (click)="resultadoFinal()">
+                  =
+                </button>
+              </div>
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-warning w-100"
+                  (click)="resultado('+')">
+                  +
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

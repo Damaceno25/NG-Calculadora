@@ -1,0 +1,18 @@
+<div>
+  <div class="d-flex justify-content-center mt-3 mb-4">
+    <h1 class="bg-dark text-white px-3 py-2 rounded mb-0">NG - CALCULADORA</h1>
+  </div>
+
+  <app-teclado></app-teclado>
+</div>
+
+<hr />
+
+<div class="text-center">
+  <app-botaoif></app-botaoif>
+  <div class="text-center w-100">
+    <app-sobre *ngIf="mostrarSobre"></app-sobre>
+  </div>
+</div>
+
+<hr />
